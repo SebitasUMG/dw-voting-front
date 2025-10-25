@@ -699,8 +699,8 @@ const VoterDashboard: React.FC = () => {
                   <YAxis />
                   <Tooltip />
                   <Bar dataKey="votos" radius={[8, 8, 0, 0]}>
-                    {chartData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                    {chartData.map((_entry, index) => (
+                      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]}/>
                     ))}
                   </Bar>
                 </BarChart>
