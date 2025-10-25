@@ -9,6 +9,7 @@ interface User {
   email: string;
   dpi: string;
   role: 'voter' | 'admin';
+  password?: string;
 }
 
 interface Candidato {
